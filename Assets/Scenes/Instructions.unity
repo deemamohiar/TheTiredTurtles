@@ -250,7 +250,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -345, y: -65}
+  m_AnchoredPosition: {x: -345, y: -54}
   m_SizeDelta: {x: 370.7626, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &662020573
@@ -399,7 +399,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -264, y: -175}
+  m_AnchoredPosition: {x: -264, y: -164}
   m_SizeDelta: {x: 467.0387, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &788152347
@@ -608,7 +608,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 347, y: -174}
+  m_AnchoredPosition: {x: 347, y: -163}
   m_SizeDelta: {x: 467.0387, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &961659342
@@ -1064,7 +1064,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -335.38586, y: -65}
+  m_AnchoredPosition: {x: -335.38586, y: -54}
   m_SizeDelta: {x: 319.9908, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1400420174
@@ -1087,9 +1087,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You've received a strange letter from your grandfather, warning you that
-    your life is in danger and that you must find something before they find you...
-    use the clues he left behind to figure out what you must protect, but do it fast!
+  m_text: "You've received a strange letter from your grandfather, warning you that
+    your life is in danger. You must hurry to piece together the clues he left you
+    around in his\r\nmansion before the timer runs out. That\u2019s how long you
+    have until they find you."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 78d7ab25f17fe044ea5f1a326d3ba41f, type: 2}
   m_sharedMaterial: {fileID: -3754613340027392055, guid: 78d7ab25f17fe044ea5f1a326d3ba41f, type: 2}
