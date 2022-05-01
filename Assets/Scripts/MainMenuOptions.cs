@@ -10,6 +10,8 @@ public class MainMenuOptions : MonoBehaviour
     {
         // Show Main Menu
         MainMenu.SetActive(true);
+        // Play music
+        GameObject.FindGameObjectWithTag("MainMenuInstructionsAudio").GetComponent<KeepMusicPlaying>().PlayMusic();
     }
 
     public void StartGameButton()

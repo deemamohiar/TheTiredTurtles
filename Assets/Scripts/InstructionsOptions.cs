@@ -10,6 +10,7 @@ public class InstructionsOptions : MonoBehaviour
     {
         // Show Main Menu
         Instructions.SetActive(true);
+        GameObject.FindGameObjectWithTag("MainMenuInstructionsAudio").GetComponent<KeepMusicPlaying>().PlayMusic();
     }
 
     public void BackHomeButton() 
