@@ -16,8 +16,8 @@ public class MainMenuOptions : MonoBehaviour
 
     public void StartGameButton()
     {
-        // Load First Level
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Level1");
+        // Load intro scene
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Intro");
     }
 
     public void InstructionsButton() 
