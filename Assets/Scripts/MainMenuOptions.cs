@@ -5,13 +5,18 @@ using UnityEngine;
 public class MainMenuOptions : MonoBehaviour
 {
     public GameObject MainMenu;
+    private GameObject[] audioCount;
 
     void Start()
     {
         // Show Main Menu
         MainMenu.SetActive(true);
-        // Play music
-        GameObject.FindGameObjectWithTag("MainMenuInstructionsAudio").GetComponent<KeepMusicPlaying>().PlayMusic();
+
+        // Make sure background audio doesn't get duplicated from the "DontDestroyOnLoad" method
+        audioCount = GameObject.FindGameObjectsWithTag("MainMenuInstructionsAudio");
+        if (audioCount.Length > 1) {
+            Object.Destroy(GameObject.FindGameObjectsWithTag("MainMenuInstructionsAudio")[1]);
+        }
     }
 
     public void StartGameButton()

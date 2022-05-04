@@ -3,11 +3,13 @@ using UnityEngine;
  public class KeepMusicPlaying : MonoBehaviour
  {
      private AudioSource _audioSource;
-     
+     private GameObject[] audioCount;
+
      private void Awake()
      {
-         DontDestroyOnLoad(transform.gameObject);
-         _audioSource = GetComponent<AudioSource>();
+        DontDestroyOnLoad(transform.gameObject);
+        
+        _audioSource = GetComponent<AudioSource>();
      }
  
      public void PlayMusic()
