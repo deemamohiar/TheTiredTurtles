@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 7665566446419699168}
   - component: {fileID: 5585984542003368234}
   - component: {fileID: 1987305890734038324}
+  - component: {fileID: 1463875640760515469}
   m_Layer: 0
   m_Name: DoorFrameExt3A
   m_TagString: Untagged
@@ -194,6 +195,19 @@ LODGroup:
     renderers:
     - renderer: {fileID: 5585984542003368234}
   m_Enabled: 1
+--- !u!65 &1463875640760515469
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6234559857081495807}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.546347, y: 3.9970717, z: 0.012676832}
+  m_Center: {x: 0.05980252, y: 1.9985356, z: 0.144838}
 --- !u!1 &8898006655600803771
 GameObject:
   m_ObjectHideFlags: 0

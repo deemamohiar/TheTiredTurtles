@@ -92,7 +92,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.6
+  m_Radius: 0.8
   m_Height: 3.21
   m_Direction: 1
   m_Center: {x: 0, y: 1.43, z: 0}
@@ -163,6 +163,7 @@ GameObject:
   - component: {fileID: 6759016113520516628}
   - component: {fileID: 9069089280042856347}
   - component: {fileID: 897472223419841127}
+  - component: {fileID: 1149547957901433977}
   m_Layer: 0
   m_Name: BoxwoodRound05C_LOD1
   m_TagString: Untagged
@@ -233,3 +234,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &1149547957901433977
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6962496051800433025}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.7378012
+  m_Height: 3
+  m_Direction: 1
+  m_Center: {x: 0.03708625, y: 1.6169846, z: 0.005463779}

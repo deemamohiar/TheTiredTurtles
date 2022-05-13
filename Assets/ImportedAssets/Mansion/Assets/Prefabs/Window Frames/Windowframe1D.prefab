@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5367593857344595957}
   - component: {fileID: 5367593857345365973}
   - component: {fileID: 5367593857346364693}
+  - component: {fileID: 7082148722804373046}
   m_Layer: 0
   m_Name: Windowframe1D
   m_TagString: Untagged
@@ -81,3 +82,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7082148722804373046
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5367593857344109525}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.1422615, y: 3.735032, z: 1.5530996}
+  m_Center: {x: 0.07515343, y: 1.8653746, z: 0.22498094}

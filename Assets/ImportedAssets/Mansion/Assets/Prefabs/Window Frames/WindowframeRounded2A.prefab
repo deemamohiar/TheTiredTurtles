@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 550794419328708670}
   - component: {fileID: 3461872895105826715}
   - component: {fileID: 1724874566331075409}
+  - component: {fileID: 3062355330161264443}
   m_Layer: 0
   m_Name: WindowframeRounded2A
   m_TagString: Untagged
@@ -81,3 +82,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3062355330161264443
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931963887181015684}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.7601504, y: 3.581439, z: 1.1448117}
+  m_Center: {x: 0.0000026226037, y: 1.7845073, z: 0.8224055}

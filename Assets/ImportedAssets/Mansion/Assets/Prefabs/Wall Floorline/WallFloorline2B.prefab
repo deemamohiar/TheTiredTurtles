@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3108492123432698187}
   - component: {fileID: 2057105478546181870}
   - component: {fileID: 4280875685608798756}
+  - component: {fileID: 3196972491090059084}
   m_Layer: 0
   m_Name: WallFloorline2B
   m_TagString: Untagged
@@ -81,3 +82,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3196972491090059084
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2335193035433712625}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.9999993, y: 0.2, z: 0.20000196}
+  m_Center: {x: 0.00000011920929, y: -0.100668155, z: 0.35000026}
