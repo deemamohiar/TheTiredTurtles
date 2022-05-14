@@ -77,9 +77,9 @@ Material:
     - _DstBlend: 0
     - _Gloss: 0.6158119
     - _GlossMapScale: 1
-    - _Glossiness: 0.38
+    - _Glossiness: 0.54
     - _GlossyReflections: 0
-    - _Metallic: 0
+    - _Metallic: 0.009
     - _Mode: 1
     - _NormalStrength: 1
     - _OcclusionStrength: 1

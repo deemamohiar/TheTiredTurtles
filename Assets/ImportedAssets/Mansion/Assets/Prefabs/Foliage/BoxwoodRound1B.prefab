@@ -148,7 +148,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.5
+  m_Radius: 2
   m_Height: 4.5
   m_Direction: 1
   m_Center: {x: 0, y: 2, z: 0}
@@ -245,5 +245,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.6271448, y: 4, z: 2.682653}
-  m_Center: {x: -0.053672314, y: 2.1559796, z: 0.0035274625}
+  m_Size: {x: 3.7086685, y: 4, z: 3.8564262}
+  m_Center: {x: 0.056723475, y: 2.1559796, z: 0.34744573}

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 458059985705428952}
   - component: {fileID: 4186481478645487669}
   - component: {fileID: 7576432586761244236}
+  - component: {fileID: 5445664080289292068}
   m_Layer: 0
   m_Name: Boxwood05x4middle_LOD0
   m_TagString: Untagged
@@ -91,10 +92,23 @@ BoxCollider:
   m_GameObject: {fileID: 1366191556449635439}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2442645, y: 2.2342093, z: 8.608342}
+  m_Center: {x: -0.050291598, y: 1.1221403, z: 0.068210125}
+--- !u!65 &5445664080289292068
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366191556449635439}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.3077015, y: 2.2342093, z: 8.283739}
-  m_Center: {x: 0.00000044703506, y: 1.1221403, z: -0.000007867813}
+  m_Size: {x: 1.5284874, y: 2.2342093, z: 8.158859}
+  m_Center: {x: -0.10481258, y: 1.1221403, z: 0.062438212}
 --- !u!1 &7522699939430208570
 GameObject:
   m_ObjectHideFlags: 0
@@ -186,10 +200,10 @@ BoxCollider:
   m_GameObject: {fileID: 7522699939430208570}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 1.8213191, y: 2.1271954, z: 8.847084}
-  m_Center: {x: -0.018526673, y: 1.0686333, z: -0.12507248}
+  m_Size: {x: 1.4001458, y: 2.1271954, z: 8.427994}
+  m_Center: {x: -0.038223613, y: 1.0686333, z: 0.09694953}
 --- !u!1 &8511834399312816195
 GameObject:
   m_ObjectHideFlags: 0

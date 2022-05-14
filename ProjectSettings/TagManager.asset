@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - MainMenuInstructionsAudio
+  - CinemachineTarget
+  - EntranceDoors
   layers:
   - Default
   - TransparentFX
