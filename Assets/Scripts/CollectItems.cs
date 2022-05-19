@@ -34,6 +34,9 @@ public class CollectItems : MonoBehaviour
             Destroy(item);
         }
         
+        if(isKeyCollected && isClueCollected) {
+            OpenCloseDoor.isDoorUnlocked = true;
+        }
     } 
 
 }

@@ -93,8 +93,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.4682304, y: 2.2342093, z: 2.2715669}
-  m_Center: {x: 0.07582311, y: 1.1221403, z: 0.010801433}
+  m_Size: {x: 1.1581117, y: 2.2342093, z: 2.2043715}
+  m_Center: {x: 0.0034528803, y: 1.1221403, z: 0.044399254}
 --- !u!1 &6947236819077998543
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,7 +106,6 @@ GameObject:
   - component: {fileID: 5652839735321395193}
   - component: {fileID: 6060237843222505491}
   - component: {fileID: 7376710343839484379}
-  - component: {fileID: 2834806156278119756}
   m_Layer: 0
   m_Name: Boxwood05x1middle_LOD1
   m_TagString: Untagged
@@ -177,19 +176,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2834806156278119756
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6947236819077998543}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.4622259, y: 2.1271954, z: 2.3298628}
-  m_Center: {x: 0.021085855, y: 1.0686333, z: 0.04757141}
 --- !u!1 &7904278871171937753
 GameObject:
   m_ObjectHideFlags: 0

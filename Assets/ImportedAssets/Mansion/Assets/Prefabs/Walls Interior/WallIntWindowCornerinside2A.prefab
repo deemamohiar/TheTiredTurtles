@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 2917248780536733201}
   - component: {fileID: 2917248780535602385}
   - component: {fileID: 6591438777526324413}
+  - component: {fileID: 3307799483052613362}
+  - component: {fileID: 7341735785917243378}
   m_Layer: 0
   m_Name: WallIntWindowCornerinside2A
   m_TagString: Untagged
@@ -97,3 +99,29 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: b0b5a433bdab40844acc6ac51b308e89, type: 3}
+--- !u!65 &3307799483052613362
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2917248780537856529}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.1465518, y: 4.0569987, z: 0.19468549}
+  m_Center: {x: 0.92326874, y: 1.7715008, z: 0.05265372}
+--- !u!65 &7341735785917243378
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2917248780537856529}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.36172467, y: 3.8, z: 2.1500008}
+  m_Center: {x: 0.030866638, y: 1.9, z: -0.92500013}

@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 7983000515481106310}
   - component: {fileID: 7983000515482203462}
   - component: {fileID: 2773611830671022656}
+  - component: {fileID: 169119951825650860}
   m_Layer: 0
   m_Name: WallIntDoorExt1A
   m_TagString: Untagged
@@ -193,3 +194,16 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 9700fc45e0308cb45b83ac2097caa93d, type: 3}
+--- !u!65 &169119951825650860
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7983000515484134278}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.0000005, y: 3.9356446, z: 0.27569574}
+  m_Center: {x: -0.00000024293067, y: 1.8321774, z: 0.03785069}

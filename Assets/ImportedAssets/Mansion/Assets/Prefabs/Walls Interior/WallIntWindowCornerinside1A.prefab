@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2782258900032331311}
   - component: {fileID: 105947786910395109}
   - component: {fileID: 1637607476145354340}
+  - component: {fileID: 3424334787238464995}
   m_Layer: 0
   m_Name: WallIntWindowCornerinside1A
   m_TagString: Untagged
@@ -97,3 +98,16 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6787158218002311513, guid: ad6bee3360a83e7438020c50f3c1f3df, type: 3}
+--- !u!65 &3424334787238464995
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907444331185687344}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.39799696, y: 3.8, z: 1.949995}
+  m_Center: {x: 0.048998564, y: 1.9, z: -1.0249951}
