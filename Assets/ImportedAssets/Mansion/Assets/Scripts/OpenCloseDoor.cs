@@ -44,8 +44,7 @@ public class OpenCloseDoor : MonoBehaviour
             if (aud != null)
                 aud.clip = audClips[0];
                 aud.Play(); 
-            
-            StartCoroutine(FadingOut());
+           StartCoroutine(FadingOut());
         }
         // only open doors in level 2 that are not doors leading outside the house
         else if (col.CompareTag("Player") && 
@@ -78,12 +77,20 @@ public class OpenCloseDoor : MonoBehaviour
         }
     }
 
-    IEnumerator FadingOut() {
+    public IEnumerator FadingOut() {
         // transition to next level
         animatorImage.SetBool("FadeOut", true);
+        // Debug.Log("Fade out is: " + animatorImage.GetBool("FadeOut"));
         // make sure fading out has finished before transitioning to next scene
-        yield return new WaitUntil(() => blackImage.color.a==0);
-        SceneManager.LoadScene("Level2Title");
+        if (!this.animatorImage.GetCurrentAnimatorStateInfo(0).IsName("FadeOutOfLevel1"))
+        {
+            yield return new WaitUntil(() => blackImage.color.a==1);
+        }
+        else{
+            SceneManager.LoadScene("Level2Title");
+        }
+
     }
+
 
 }
