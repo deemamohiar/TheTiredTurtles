@@ -41,9 +41,10 @@ public class OpenCloseDoor : MonoBehaviour
             //play "open" animation;
             anim.SetBool("open", true);
             //if the AudioSource is addigned - play first (open) sound
-            if (aud != null)
+            if (aud != null) {
                 aud.clip = audClips[0];
                 aud.Play(); 
+            }
            StartCoroutine(FadingOut());
         }
         // only open doors in level 2 that are not doors leading outside the house
@@ -78,18 +79,19 @@ public class OpenCloseDoor : MonoBehaviour
     }
 
     public IEnumerator FadingOut() {
-        // transition to next level
-        animatorImage.SetBool("FadeOut", true);
-        // Debug.Log("Fade out is: " + animatorImage.GetBool("FadeOut"));
-        // make sure fading out has finished before transitioning to next scene
-        if (!this.animatorImage.GetCurrentAnimatorStateInfo(0).IsName("FadeOutOfLevel1"))
-        {
-            yield return new WaitUntil(() => blackImage.color.a==1);
-        }
-        else{
-            SceneManager.LoadScene("Level2Title");
-        }
-
+        // // transition to next level
+        // animatorImage.SetBool("FadeOut", true);
+        // // Debug.Log("Fade out is: " + animatorImage.GetBool("FadeOut"));
+        // // make sure fading out has finished before transitioning to next scene
+        // if (!this.animatorImage.GetCurrentAnimatorStateInfo(0).IsName("FadeOutOfLevel1"))
+        // {
+        //     yield return new WaitUntil(() => blackImage.color.a==1);
+        // }
+        // else{
+        //     SceneManager.LoadScene("Level2Title");
+        // }
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("Level2Title");
     }
 
 
