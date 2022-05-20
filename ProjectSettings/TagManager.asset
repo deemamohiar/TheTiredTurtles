@@ -9,6 +9,7 @@ TagManager:
   - EntranceDoors
   - Clue2Tag
   - KeyTag
+  - LilyTag
   layers:
   - Default
   - TransparentFX
