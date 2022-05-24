@@ -12,8 +12,10 @@ public class ClueAndKeyPickup : MonoBehaviour
     // public GameObject scroll;
     public TMP_Text scroll, keyNarrationText;
     GameObject image, clue2Obj, key1Obj, keyNarrationBackground;
+    bool unlockedLevel2;
     void Start()
     {
+        unlockedLevel2 = false;
         image = GameObject.Find("PapyrusPaper");
         clue2Obj = GameObject.Find("Clue2");
         key1Obj = GameObject.Find("Key1");
@@ -31,8 +33,9 @@ public class ClueAndKeyPickup : MonoBehaviour
     public void PickupKey()
     {
         key1Obj.SetActive(false);
-        StartCoroutine(BottomNaration());
-        
+        // keyPickupSound.Play();
+        StartCoroutine(BottomNaration("Hmm...\nThis must be the key to the frond door..."));
+        unlockedLevel2 = true;
     }
     public IEnumerator ShowScroll()
     {
@@ -42,12 +45,22 @@ public class ClueAndKeyPickup : MonoBehaviour
         image.SetActive(false);
         scroll.enabled = false;
     }
-    public IEnumerator BottomNaration()
+    public IEnumerator BottomNaration(string message)
     {
         keyNarrationBackground.SetActive(true);
+        keyNarrationText.SetText(message);
         keyNarrationText.enabled = true;
-        yield return new WaitForSeconds(10.0f);
+        yield return new WaitForSeconds(5.0f);
         keyNarrationBackground.SetActive(false);
         keyNarrationText.enabled = false;
+    }
+    public void SecondLevel()
+    {
+        if (unlockedLevel2 == true)
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Level2");
+        } else {
+            StartCoroutine(BottomNaration("Looks like this door is locked..."));
+        }
     }
 }
