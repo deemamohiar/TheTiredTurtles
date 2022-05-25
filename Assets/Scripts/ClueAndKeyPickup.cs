@@ -8,11 +8,13 @@ using UnityEngine.UI;
 public class ClueAndKeyPickup : MonoBehaviour
 {
     public AudioSource scrollPickupSound;
+    public AudioSource scrollPickupEffect;
     public AudioSource keyPickupSound;
     // public GameObject scroll;
     public TMP_Text scroll, keyNarrationText;
     GameObject image, clue2Obj, key1Obj, keyNarrationBackground;
     bool unlockedLevel2;
+    public Text hint;
     void Start()
     {
         unlockedLevel2 = false;
@@ -27,14 +29,15 @@ public class ClueAndKeyPickup : MonoBehaviour
     public void PickupScroll()
     {
         clue2Obj.SetActive(false);
+        scrollPickupEffect.Play();
         scrollPickupSound.Play();
         StartCoroutine(ShowScroll());
     }
     public void PickupKey()
     {
         key1Obj.SetActive(false);
-        // keyPickupSound.Play();
-        StartCoroutine(BottomNaration("Hmm...\nThis must be the key to the frond door..."));
+        keyPickupSound.Play();
+        StartCoroutine(BottomNaration("Hmm...\nThis must be the key to the front door..."));
         unlockedLevel2 = true;
     }
     public IEnumerator ShowScroll()
@@ -44,6 +47,7 @@ public class ClueAndKeyPickup : MonoBehaviour
         yield return new WaitForSeconds(10.0f);
         image.SetActive(false);
         scroll.enabled = false;
+        hint.text = ("a reader lives a thousand lives, the illiterate lives only one \n a thousand lives you should then track, led by the stars of your zodiac");
     }
     public IEnumerator BottomNaration(string message)
     {
