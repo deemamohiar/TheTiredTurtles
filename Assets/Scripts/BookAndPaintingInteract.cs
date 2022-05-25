@@ -13,6 +13,7 @@ public class BookAndPaintingInteract : MonoBehaviour
     GameObject image, bookObj, deemoh, consta, babriel, lysol;
     public GameObject[] paintings;
     bool unlockedPainting;
+    public Text hint;
     void Start()
     {
         unlockedPainting = false;
@@ -36,6 +37,7 @@ public class BookAndPaintingInteract : MonoBehaviour
     {
         image.SetActive(true);
         scroll.enabled = true;
+        hint.text = "Eyes are the window to the soul, the closer to your eyes, the closer to your goal";
         yield return new WaitForSeconds(10.0f);
         image.SetActive(false);
         scroll.enabled = false;
