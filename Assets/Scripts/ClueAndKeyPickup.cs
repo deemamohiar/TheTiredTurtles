@@ -37,7 +37,7 @@ public class ClueAndKeyPickup : MonoBehaviour
     {
         key1Obj.SetActive(false);
         keyPickupSound.Play();
-        StartCoroutine(BottomNaration("Hmm...\nThis must be the key to the front door..."));
+        StartCoroutine(BottomNaration("Hmm...\nI wonder this can be used for..."));
         unlockedLevel2 = true;
     }
     public IEnumerator ShowScroll()
@@ -62,7 +62,7 @@ public class ClueAndKeyPickup : MonoBehaviour
     {
         if (unlockedLevel2 == true)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Level2");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Level2Title");
         } else {
             StartCoroutine(BottomNaration("Looks like this door is locked..."));
         }

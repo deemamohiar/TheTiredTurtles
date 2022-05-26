@@ -318,8 +318,11 @@ MonoBehaviour:
   m_text: "Dearest flower,\n\nIf you are reading, it means I\u2019m no longer there
     to tell you myself. I\u2019ve always been worried about my son, Babriel. He never
     was mentally stable I and knew he could not be trusted with the inheritance.
-    Now go to the tree beyond the rock, as he might be close behind.\n\n\tYour loving
-    grandfather"
+    So, in the case he ever found out, I knew I needed a plan to ensure the money
+    did not fall into the wrong hands and I knew I could count on your love for solving
+    riddles to set the plan in motion. \r      Thats why I left it all to *you*.
+    \r\nNow, you must hurry and escape with your inheritance through the vents. Quickly,
+    before he finds you.\r\n\n\tYour loving grandfather"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 998e6dbe2fce87e428069d5ab5d4430e, type: 2}
   m_sharedMaterial: {fileID: -6718448564762038544, guid: 998e6dbe2fce87e428069d5ab5d4430e, type: 2}
@@ -346,8 +349,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
