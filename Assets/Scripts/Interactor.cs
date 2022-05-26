@@ -22,7 +22,7 @@ public class Interactor : MonoBehaviour
     void Update()
     {
         RaycastHit hit;
-        if(Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, 1, interactableLayerMask))
+        if(Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, 3, interactableLayerMask))
         {
             Debug.Log(hit.collider.name);
             if(hit.collider.GetComponent<Interactable>() != false)
