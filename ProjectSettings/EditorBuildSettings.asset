@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Level2.unity
     guid: 46eccf8c6e9bf764fb207e660f8b1716
   - enabled: 1
+    path: Assets/Scenes/EndingSequence.unity
+    guid: c758a53be655d1946a61afb9502147fe
+  - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 9e9a2cba69026a642a68da52fd99ef3c
   m_configObjects:
