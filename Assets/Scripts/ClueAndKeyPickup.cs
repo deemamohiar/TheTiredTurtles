@@ -10,6 +10,7 @@ public class ClueAndKeyPickup : MonoBehaviour
     public AudioSource scrollPickupSound;
     public AudioSource scrollPickupEffect;
     public AudioSource keyPickupSound;
+    public AudioSource doorUnlockSound;
     // public GameObject scroll;
     public TMP_Text scroll, keyNarrationText;
     GameObject image, clue2Obj, key1Obj, keyNarrationBackground;
@@ -62,9 +63,16 @@ public class ClueAndKeyPickup : MonoBehaviour
     {
         if (unlockedLevel2 == true)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Level2Title");
+            StartCoroutine(levelUnlock());
+            
         } else {
             StartCoroutine(BottomNaration("Looks like this door is locked..."));
         }
+    }
+    IEnumerator levelUnlock()
+    {
+        doorUnlockSound.Play();
+        yield return new WaitForSeconds(3.0f);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Level2Title");
     }
 }

@@ -24,12 +24,20 @@ public class Level1Timer : MonoBehaviour {
         if (timerRunning)
         {
             currentTime -= Time.deltaTime;
-            timerText.text = "Time Remaining: " + System.Math.Round(currentTime);
+            timerText.text = DisplayTime(currentTime);
             if (currentTime <= 0)
             {
                 timerRunning = false;
                 SceneManager.LoadScene("GameOver");
             }
         }
+    }
+
+    string DisplayTime(float time)
+    {
+        string text;
+        float minutes = Mathf.FloorToInt(time / 60);
+        float seconds = Mathf.FloorToInt(time % 60);
+        return text = string.Format("Time Left: {0:00}:{1:00}", minutes, seconds);
     }
 }

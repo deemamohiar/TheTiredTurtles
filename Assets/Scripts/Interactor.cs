@@ -13,6 +13,7 @@ public class Interactor : MonoBehaviour
     public Vector2 defaultIconSize;
     public Sprite defaultInteractIcon;
     public Vector2 defaultInteractIconSize;
+    public int raycast;
     void Start()
     {
         
@@ -22,7 +23,7 @@ public class Interactor : MonoBehaviour
     void Update()
     {
         RaycastHit hit;
-        if(Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, 2, interactableLayerMask))
+        if(Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, raycast, interactableLayerMask))
         {
             Debug.Log(hit.collider.name);
             if(hit.collider.GetComponent<Interactable>() != false)
