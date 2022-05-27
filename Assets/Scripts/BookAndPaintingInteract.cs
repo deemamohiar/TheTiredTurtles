@@ -57,7 +57,8 @@ public class BookAndPaintingInteract : MonoBehaviour
     {
         if(paintings[index].GetComponent<Interactable>().enabled != true)
         {
-            BottomNarationWhenInteractingWithPainting("What am I doing?\nI should look for the clue...");
+            // BottomNarationWhenInteractingWithPainting("What am I doing?\nI should look for the clue...");
+            Debug.Log("Cant do anything");
         }
         else if(paintings[index].GetComponent<Interactable>().enabled == true)
         {
@@ -90,15 +91,15 @@ public class BookAndPaintingInteract : MonoBehaviour
         bookNarrationBackground.SetActive(false);
         bookNarrationText.enabled = false;
     }
-    public IEnumerator BottomNarationWhenInteractingWithPainting(string message)
-    {
-        bookNarrationBackground.SetActive(true);
-        bookNarrationText.SetText(message);
-        bookNarrationText.enabled = true;
-        yield return new WaitForSeconds(5.0f);
-        bookNarrationBackground.SetActive(false);
-        bookNarrationText.enabled = false;
-    }
+    // public IEnumerator BottomNarationWhenInteractingWithPainting(string message)
+    // {
+    //     bookNarrationBackground.SetActive(true);
+    //     bookNarrationText.SetText(message);
+    //     bookNarrationText.enabled = true;
+    //     yield return new WaitForSeconds(5.0f);
+    //     bookNarrationBackground.SetActive(false);
+    //     bookNarrationText.enabled = false;
+    // }
     public void EndLevel()
     {
         scrollPickupEffect.Play();
