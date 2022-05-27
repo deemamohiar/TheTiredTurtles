@@ -5,8 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
-    public void changeScene(int sceneID)
+    bool isCursorLocked = false;
+    void Start()
     {
-        SceneManager.LoadScene(sceneID);
+        Cursor.lockState = isCursorLocked ? CursorLockMode.Locked : CursorLockMode.None;
+        Cursor.visible = !isCursorLocked;
+    }
+    public void changeScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 }

@@ -10,6 +10,8 @@ using UnityEngine;
         DontDestroyOnLoad(transform.gameObject);
         
         _audioSource = GetComponent<AudioSource>();
+
+        PlayMusic();
      }
  
      public void PlayMusic()
