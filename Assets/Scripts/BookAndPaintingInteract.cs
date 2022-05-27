@@ -48,6 +48,7 @@ public class BookAndPaintingInteract : MonoBehaviour
         }
         bookObj.SetActive(false);
         // bookPickupSound.Play();
+        scrollPickupEffect.Play();
         StartCoroutine(ShowScroll());
         StartCoroutine(BottomNarationAfterScroll("Hmm...\neyes are the window to the soul, eyes..."));
         
@@ -56,8 +57,7 @@ public class BookAndPaintingInteract : MonoBehaviour
     {
         if(paintings[index].GetComponent<Interactable>().enabled != true)
         {
-            Debug.Log("cannot do anything");
-
+            BottomNarationWhenInteractingWithPainting("What am I doing?\nI should look for the clue...");
         }
         else if(paintings[index].GetComponent<Interactable>().enabled == true)
         {
@@ -67,6 +67,7 @@ public class BookAndPaintingInteract : MonoBehaviour
                 lisaWall.SetActive(false);
                 lisaWallDoor.SetActive(true);
             }
+            scrollPickupEffect.Play();
             paintings[index].SetActive(false);
         }
     }
@@ -82,6 +83,15 @@ public class BookAndPaintingInteract : MonoBehaviour
     public IEnumerator BottomNarationAfterScroll(string message)
     {
         yield return new WaitForSeconds(8.0f);
+        bookNarrationBackground.SetActive(true);
+        bookNarrationText.SetText(message);
+        bookNarrationText.enabled = true;
+        yield return new WaitForSeconds(5.0f);
+        bookNarrationBackground.SetActive(false);
+        bookNarrationText.enabled = false;
+    }
+    public IEnumerator BottomNarationWhenInteractingWithPainting(string message)
+    {
         bookNarrationBackground.SetActive(true);
         bookNarrationText.SetText(message);
         bookNarrationText.enabled = true;
