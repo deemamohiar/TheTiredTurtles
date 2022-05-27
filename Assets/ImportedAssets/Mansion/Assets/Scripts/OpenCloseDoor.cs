@@ -74,7 +74,7 @@ public class OpenCloseDoor : MonoBehaviour
             //if the AudioSource is addigned - play second (close) sound
             if (aud != null && hasDoorBeenOpened)
                 aud.clip = audClips[1];
-                aud.Play();
+                // aud.Play();
         }
     }
 
