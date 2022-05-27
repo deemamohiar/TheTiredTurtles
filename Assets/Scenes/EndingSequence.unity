@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -315,14 +315,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Dearest flower,\n\nIf you are reading, it means I\u2019m no longer there
-    to tell you myself. I\u2019ve always been worried about my son, Babriel. He never
-    was mentally stable I and knew he could not be trusted with the inheritance.
-    So, in the case he ever found out, I knew I needed a plan to ensure the money
-    did not fall into the wrong hands and I knew I could count on your love for solving
-    riddles to set the plan in motion. \r      Thats why I left it all to *you*.
-    \r\nNow, you must hurry and escape with your inheritance through the vents. Quickly,
-    before he finds you.\r\n\n\tYour loving grandfather"
+  m_text: "Dearest flower, \r\n\r\nIf you are reading this, it means I\u2019m no
+    longer there to tell you myself. I\u2019ve always been worried about my son,
+    Babriel. He never was mentally stable, and I knew he could not be trusted with
+    his inheritance. So, in the case he ever found out, I knew I needed a plan to
+    ensure the money did not fall into the wrong hands, and I knew I could count
+    on your love for solving riddles to set the plan in motion. \r \nThat is why
+    I left it all to YOU. \r\nNow, you must hurry and escape with your inheritance
+    through the vents. Quickly, before he finds you.\r\n\tMay we meet again, my lovely
+    Lily."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 998e6dbe2fce87e428069d5ab5d4430e, type: 2}
   m_sharedMaterial: {fileID: -6718448564762038544, guid: 998e6dbe2fce87e428069d5ab5d4430e, type: 2}
@@ -458,7 +459,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1114094165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -718,7 +719,7 @@ GameObject:
   - component: {fileID: 1427479258}
   - component: {fileID: 1427479261}
   m_Layer: 5
-  m_Name: Level1
+  m_Name: GameCompleted
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -775,7 +776,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: GAME OVER
+  m_text: 'GAME COMPLETED
+
+
+    You''ve survived... For now.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 78d7ab25f17fe044ea5f1a326d3ba41f, type: 2}
   m_sharedMaterial: {fileID: -3754613340027392055, guid: 78d7ab25f17fe044ea5f1a326d3ba41f, type: 2}

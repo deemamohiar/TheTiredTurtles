@@ -8,7 +8,8 @@ using UnityEngine.UI;
 public class BookAndPaintingInteract : MonoBehaviour
 {
     
-    public AudioSource bookPickupSound, scrollPickupEffect;
+    // public AudioSource bookPickupSound;
+    public AudioSource scrollPickupEffect;
     public TMP_Text scroll, bookNarrationText;
     GameObject image, bookObj, deemoh, consta, babriel, lysol, lisaWall, lisaWallDoor, bookNarrationBackground, endScroll;
     public GameObject[] paintings;
@@ -46,7 +47,7 @@ public class BookAndPaintingInteract : MonoBehaviour
             paintings[i].gameObject.GetComponent<Interactable>().enabled = true;
         }
         bookObj.SetActive(false);
-        bookPickupSound.Play();
+        // bookPickupSound.Play();
         StartCoroutine(ShowScroll());
         StartCoroutine(BottomNarationAfterScroll("Hmm...\neyes are the window to the soul, eyes..."));
         

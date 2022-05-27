@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class ClueAndKeyPickup : MonoBehaviour
 {
-    public AudioSource scrollPickupSound;
+    // public AudioSource scrollPickupSound;
     public AudioSource scrollPickupEffect;
     public AudioSource keyPickupSound;
     public AudioSource doorUnlockSound;
@@ -31,14 +31,14 @@ public class ClueAndKeyPickup : MonoBehaviour
     {
         clue2Obj.SetActive(false);
         scrollPickupEffect.Play();
-        scrollPickupSound.Play();
+        // scrollPickupSound.Play();
         StartCoroutine(ShowScroll());
     }
     public void PickupKey()
     {
         key1Obj.SetActive(false);
         keyPickupSound.Play();
-        StartCoroutine(BottomNaration("Hmm...\nI wonder this can be used for..."));
+        StartCoroutine(BottomNarration("Hmm...\nI wonder what this can be used for..."));
         unlockedLevel2 = true;
     }
     public IEnumerator ShowScroll()
@@ -50,7 +50,7 @@ public class ClueAndKeyPickup : MonoBehaviour
         scroll.enabled = false;
         hint.text = ("a reader lives a thousand lives, the illiterate lives only one \n a thousand lives you should then track, led by the stars of your zodiac");
     }
-    public IEnumerator BottomNaration(string message)
+    public IEnumerator BottomNarration(string message)
     {
         keyNarrationBackground.SetActive(true);
         keyNarrationText.SetText(message);
@@ -66,7 +66,7 @@ public class ClueAndKeyPickup : MonoBehaviour
             StartCoroutine(levelUnlock());
             
         } else {
-            StartCoroutine(BottomNaration("Looks like this door is locked..."));
+            StartCoroutine(BottomNarration("Looks like this door is locked..."));
         }
     }
     IEnumerator levelUnlock()
