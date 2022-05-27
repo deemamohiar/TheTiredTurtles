@@ -41,6 +41,16 @@ public class ClueAndKeyPickup : MonoBehaviour
         StartCoroutine(BottomNarration("Hmm...\nI wonder what this can be used for..."));
         unlockedLevel2 = true;
     }
+    public void WrongDoor()
+    {
+         if (unlockedLevel2 == true)
+        {
+            StartCoroutine(BottomNarration("Hmm...\nI guess this isn't the right door..."));
+            
+        } else {
+            StartCoroutine(BottomNarration("Looks like this door is locked..."));
+        }
+    }
     public IEnumerator ShowScroll()
     {
         image.SetActive(true);
