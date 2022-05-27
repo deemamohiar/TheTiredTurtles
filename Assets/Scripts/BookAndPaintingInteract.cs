@@ -58,13 +58,11 @@ public class BookAndPaintingInteract : MonoBehaviour
         if(paintings[index].GetComponent<Interactable>().enabled != true)
         {
             StartCoroutine(BottomNarationWhenInteractingWithPainting("What am I doing?\nI should look for the clue..."));
-            Debug.Log("Cant do anything");
         }
         else if(paintings[index].GetComponent<Interactable>().enabled == true)
         {
             if(paintings[index] == paintings[3])
             {
-                Debug.Log("END LEVEL TIME");
                 lisaWall.SetActive(false);
                 lisaWallDoor.SetActive(true);
             }

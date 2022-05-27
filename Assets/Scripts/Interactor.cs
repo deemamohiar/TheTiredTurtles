@@ -25,7 +25,6 @@ public class Interactor : MonoBehaviour
         RaycastHit hit;
         if(Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, raycast, interactableLayerMask))
         {
-            Debug.Log(hit.collider.name);
             if(hit.collider.GetComponent<Interactable>() != false)
             {
                 if(interactable == null || interactable.ID != hit.collider.GetComponent<Interactable>().ID)

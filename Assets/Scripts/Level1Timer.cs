@@ -25,7 +25,7 @@ public class Level1Timer : MonoBehaviour {
         {
             currentTime -= Time.deltaTime;
             timerText.text = DisplayTime(currentTime);
-            if (currentTime <= 0)
+            if (currentTime <= 1)
             {
                 timerRunning = false;
                 SceneManager.LoadScene("GameOver");
